@@ -14,9 +14,9 @@ function Temp() {
   async function weatherData() {
     try {
       if (location) {
-        url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=888ac009afbd2fe9254588951274637a&units=metric`;
+        url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid={API_KEY}&units=metric`;
       } else {
-        url = `https://api.openweathermap.org/data/2.5/weather?q=dombivali&appid=888ac009afbd2fe9254588951274637a&units=metric`;
+        url = `https://api.openweathermap.org/data/2.5/weather?q=dombivali&appid={API_KEY}&units=metric`;
       }
 
       let res = await fetch(url);
